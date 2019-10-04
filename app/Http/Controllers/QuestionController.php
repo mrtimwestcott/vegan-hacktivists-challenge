@@ -19,4 +19,8 @@ class QuestionController extends Controller
         Question::create(['question'=>$request->question]);
         return redirect('/questions');
     }
+
+    public function show(Question $question) {
+        return view('questions.show', compact('question'));
+    }
 }
