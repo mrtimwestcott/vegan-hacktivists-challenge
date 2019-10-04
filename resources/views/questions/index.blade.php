@@ -28,7 +28,12 @@
     <h2>Browse questions:</h2>
     <ul class="list-group">
     @foreach($questions as $question)
-        <li class="list-group-item">{{ $question->question }}</li>
+        <li class="list-group-item">
+            <a href="/questions/{{$question->id}}" class="d-flex justify-content-between">
+                {{ $question->question }}
+                <span class="badge badge-primary">{{ $question->answers->count() }} answers</span>
+            </a>
+        </li>
     @endforeach
     </ul>
 @endsection
