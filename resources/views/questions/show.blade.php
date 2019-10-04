@@ -9,6 +9,9 @@
             <li class="list-group-item">{{$answer->answer}}</li>
         @endforeach
     </ul>
+    @if(!$question->answers->count())
+        <div>There are no answers! Perhaps you could be the first!</div>
+    @endif
 
     <form method="post" action="/questions/{{$question->id}}">
         @csrf
