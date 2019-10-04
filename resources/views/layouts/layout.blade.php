@@ -22,7 +22,10 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <h1>Q&A</h1>
+        </div>
         @yield('content')
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
