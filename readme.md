@@ -8,7 +8,7 @@ This is my solution to the Vegan Hactivist challenge. It's not super polished, b
 + Rename `.env.example` to `.env`
 + Update `.env` database credentials (and other things for production)
 + Run `composer install` (requires [composer](https://getcomposer.org/))
-+ Run `npm run dev` (or `npm run prod` for production) (requires [npm](https://www.npmjs.com/))
++ Run `npm install` then `npm run dev` (or `npm run prod` for production) (requires [npm](https://www.npmjs.com/))
 + Run `php artisan key:generate`
 + Run `php artisan migrate --seed`
 + Run `php artisan serve`
