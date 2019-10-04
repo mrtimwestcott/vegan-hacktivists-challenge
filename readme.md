@@ -4,7 +4,7 @@ This is my solution to the Vegan Hactivist challenge. It's not super polished, b
 
 ## Instructions
 
-+ Git pull the project 
++ Git clone the project 
 + Rename `.env.example` to `.env`
 + Update `.env` database credentials (and other things for production)
 + Run `composer install` (requires [composer](https://getcomposer.org/))
