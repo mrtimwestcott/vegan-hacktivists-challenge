@@ -7,7 +7,7 @@
         @csrf
         <div class="form-group">
             <label for="question">Ask a question:</label>
-            <textarea class="form-control" name="question" id="question" required>{{old('question')}}</textarea>
+            <textarea class="form-control" name="question" id="question" placeholder="{{ $placeholder }}" required>{{old('question')}}</textarea>
         </div>
         @if($errors->any())
             <div>
