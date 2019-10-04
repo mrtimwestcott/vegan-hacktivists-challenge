@@ -54,6 +54,9 @@ class QuestionController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function show(Question $question) {
-        return view('questions.show', compact('question'));
+        $answers = $question->answers->sortBy(function($answer) {
+            return $answer->created_at;
+        });
+        return view('questions.show', compact('question', 'answers'));
     }
 }

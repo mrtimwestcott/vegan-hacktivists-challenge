@@ -5,7 +5,7 @@
 @section('content')
     <h2>{{$question->question}}</h2>
     <ul class="list-group">
-        @foreach($question->answers as $answer)
+        @foreach($answers as $answer)
             <li class="list-group-item">{{$answer->answer}}</li>
         @endforeach
     </ul>
