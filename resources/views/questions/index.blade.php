@@ -10,7 +10,7 @@
             <textarea class="form-control" name="question" id="question" placeholder="{{ $placeholder }}" required>{{old('question')}}</textarea>
         </div>
         @if($errors->any())
-            <div>
+            <div class="alert alert-danger">
                 <ul>
                     @foreach($errors->all() as $error)
                         <li>{{$error}}</li>
